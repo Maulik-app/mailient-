@@ -2,8 +2,9 @@ import { auth } from '../../lib/auth.js';
 import { redirect } from 'next/navigation';
 
 export const metadata = {
-  title: 'Arcus | Mailient',
+  title: 'Arcus',
   description: 'Chat with your AI email agent for email agentic performance.',
+  robots: { index: false, follow: false },
 };
 
 // This layout wraps ALL dashboard routes but doesn't enforce authentication
