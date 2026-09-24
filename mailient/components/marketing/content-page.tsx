@@ -113,7 +113,7 @@ export function RelatedLinks({ links }: { links: RelatedLink[] }) {
 export function TrialCta() {
   return (
     <div className="mt-16 rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-      <p className="text-lg font-semibold text-white">Put an inbox employee on your Gmail.</p>
+      <p className="text-lg font-semibold text-white">Try Mailient on your Gmail.</p>
       <p className="mt-2 text-sm text-neutral-400">
         {PRODUCT.trial.days}-day trial, card required. Nothing sends without your approval.
       </p>

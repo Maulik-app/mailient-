@@ -7,16 +7,16 @@ export const HOME: ContentPage = {
   path: "/",
   title: SITE.homeTitle,
   description: SITE.definitionShort,
-  h1: "The AI inbox employee for founders",
+  h1: "AI inbox triage for founders on Gmail",
   lede: SITE.definition,
   sections: [
     {
       h2: "What does Mailient do?",
       answer:
-        "Mailient sorts your Gmail into what needs a decision and helps you act on it: drafting replies, surfacing missed follow-ups and scheduling meetings. Nothing goes out until you approve it.",
+        "Mailient sorts your Gmail into what needs a decision and helps you act on it: surfacing missed follow-ups, drafting a reply when you ask, and scheduling meetings after you say yes. Nothing goes out until you approve it.",
       bullets: [
-        "Triage: your inbox sorted into opportunities, urgent requests, missed follow-ups and conversations at risk.",
-        "Drafts: a reply written from the email in front of you, for you to edit and send.",
+        "Triage: when you open Mailient, your inbox is sorted into opportunities, urgent requests, missed follow-ups and conversations at risk.",
+        "Drafts: ask for a reply to the email in front of you, then edit and send it yourself.",
         "Meetings: Arcus proposes a time and, once you say yes, creates the Google Calendar event with a Google Meet link.",
         "Ask your inbox: chat with Arcus about what's in your email.",
       ],
@@ -42,7 +42,7 @@ export const HOME: ContentPage = {
     {
       h2: "How is Mailient different from ChatGPT, Gemini, Fyxer or Superhuman?",
       answer:
-        "Unlike ChatGPT with a Gmail connector, Mailient starts from your inbox rather than a question: your mail is already sorted by what needs a decision when you open it. Against dedicated inbox tools the differences are narrower, so we compare them side by side.",
+        "Unlike ChatGPT with a Gmail connector, Mailient starts from your inbox rather than a question: when you open it, it sorts your mail by what needs a decision. Against dedicated inbox tools the differences are narrower, and some of them do more on their own, so we compare them side by side.",
     },
   ],
   faqs: [
@@ -77,15 +77,15 @@ export const AI_INBOX_EMPLOYEE: ContentPage = {
   path: "/ai-inbox-employee",
   title: "What Is an AI Inbox Employee?",
   description:
-    "An AI inbox employee works your email as a job, not a compose button: it sorts what needs you, drafts, schedules, and waits for approval to send.",
+    "An AI inbox employee works your email as a job, not a compose button. What the category means, and which parts of it Mailient does today.",
   h1: "What is an AI inbox employee?",
   lede:
-    "An AI inbox employee is software that treats your inbox as a job rather than a writing task. It sorts what needs you, surfaces what's slipping, drafts replies and schedules meetings, and hands you the decisions. Mailient is an AI inbox employee for founders on Gmail, and nothing it writes sends without your approval.",
+    "An AI inbox employee is software that treats your inbox as a job rather than a writing task: sorting what needs you, drafting, scheduling and following up, ideally without being asked. Mailient is an AI inbox assistant for founders on Gmail that does the first part of that job today. It sorts what needs you, drafts a reply when you ask, and sends nothing until you approve it.",
   sections: [
     {
       h2: "How is an AI inbox employee different from an AI email assistant?",
       answer:
-        "An AI email assistant waits for you: you open a thread, ask for a draft, and it writes one. An AI inbox employee like Mailient starts from the inbox instead of a prompt: it sorts what needs you and flags what's slipping, so you begin with decisions, not a search.",
+        "An AI email assistant waits for you: you open a thread, ask for a draft, and it writes one. An AI inbox employee starts from the inbox itself and works before you ask; Mailient sits between the two: it sorts your inbox when you open it and drafts when you ask.",
       body: [
         "The difference is who starts the work. Assistants, such as a Help Me Write button, a chatbot with a Gmail connector or a writing add-on, save time on each email but still need you to find that email first. For a founder whose inbox mixes investors, customers and hiring, finding and deciding is most of the job. Typing is the easy part.",
       ],
@@ -93,16 +93,24 @@ export const AI_INBOX_EMPLOYEE: ContentPage = {
     {
       h2: "Why isn't ChatGPT with a Gmail connector an inbox employee?",
       answer:
-        "ChatGPT's Gmail connector works inside a conversation: it reads your mail when you ask it something. Mailient starts from your inbox: when you open it, your mail is already sorted by what needs a decision, and drafting and scheduling happen in the same place.",
+        "ChatGPT's Gmail connector works inside a conversation: it reads your mail when you ask it something. Mailient starts from your inbox: when you open it, it sorts your mail by what needs a decision, and drafting and scheduling happen in the same place.",
       body: [
         "Connectors are useful for questions like \"what did the investor say about the term sheet?\" They are not built to go through every new thread and decide which ones need you. That standing job is what makes something an employee rather than a tool.",
       ],
     },
     {
-      h2: "What does Mailient do without being asked?",
+      h2: "What does Mailient do today?",
       answer:
-        "Mailient sorts your Gmail into opportunities, urgent requests, missed follow-ups and conversations at risk. From there you can have it draft a reply or have Arcus schedule the meeting, and nothing goes out until you approve it.",
+        "When you open Mailient, it sorts your Gmail into opportunities, urgent requests, missed follow-ups and conversations at risk. From there you can ask it to draft a reply or have Arcus schedule the meeting, and nothing goes out until you approve it.",
       bullets: [...FACTS.is],
+    },
+    {
+      h2: "What doesn't Mailient do yet?",
+      answer:
+        "Mailient does not run overnight or draft replies on its own. If you want replies drafted in the background while you're away, Fyxer, and Superhuman on its Business plan, do that today.",
+      body: [
+        "We'd rather say that plainly than have you find out after connecting your inbox. The comparison pages show where each tool is stronger.",
+      ],
     },
     {
       h2: "Does an AI inbox employee send email without asking?",
@@ -138,7 +146,7 @@ export const AI_INBOX_EMPLOYEE: ContentPage = {
       a: "No. Mailient connects to your existing Gmail account and your mailbox stays in Gmail. You don't switch email providers.",
     },
     {
-      q: "How much does an AI inbox employee cost?",
+      q: "How much does Mailient cost?",
       a: `Mailient costs ${PRICE_SUMMARY}`,
     },
     {
@@ -167,6 +175,33 @@ export const FACTS_PAGE = {
   updatedAt: "2026-09-24",
 };
 
+export const PRICING_PAGE = {
+  path: "/pricing",
+  title: "Mailient Pricing — Plans from $8.99/week",
+  description:
+    "Mailient pricing: $8.99 per week, $29 per month, or $499 once for lifetime access. Annual billing is discounted. 3-day trial, card required.",
+  h1: "Pricing",
+  faqs: [
+    {
+      q: "Is there a free trial?",
+      a: "Every plan starts with a 3-day trial. A card is required to start it.",
+    },
+    {
+      q: "Do the plans include different features?",
+      a: "No. Every plan includes the same product; the plans differ only in how you pay.",
+    },
+    {
+      q: "Is there an annual plan?",
+      a: "Yes. Annual billing is available and costs less than paying monthly.",
+    },
+    {
+      q: "Will Mailient send emails for me?",
+      a: "No. Mailient drafts a reply when you ask, and nothing sends until you approve it.",
+    },
+  ],
+  updatedAt: "2026-09-24",
+};
+
 export const COMPARE_INDEX = {
   path: "/compare",
   title: "Mailient vs Fyxer, Superhuman, Gemini & Shortwave",
@@ -174,6 +209,6 @@ export const COMPARE_INDEX = {
     "Side-by-side comparisons of Mailient with Fyxer, Superhuman, Gemini in Gmail and Shortwave, with a source and check date on every claim.",
   h1: "How Mailient compares",
   lede:
-    "Mailient is an AI inbox employee for founders on Gmail. These pages compare it with other AI email tools on the same six questions. Every claim links to its source with the date we last checked it, because plans and prices change.",
+    "Mailient is an AI inbox assistant for founders on Gmail. These pages compare it with other AI email tools on the same six questions, including where the other tool is stronger. Every claim links to its source with the date we last checked it, because plans and prices change.",
   updatedAt: "2026-09-24",
 };

@@ -103,8 +103,7 @@ User gets response (no disruption)
 ## Environment Configuration
 
 ### Required JWT Token
-- Already configured in `rube-mcp-client.js`
-- Token: `eyJhbGciOiJIUzI1NiJ9...` (provided by user)
+- Set `RUBE_MCP_TOKEN` in the environment. Never commit the token.
 
 ### API Endpoints Used
 - Base: `https://rube.app/mcp`

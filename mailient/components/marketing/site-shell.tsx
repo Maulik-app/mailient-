@@ -2,7 +2,7 @@ import Link from "next/link";
 import { SITE } from "@/lib/seo/site";
 
 const NAV = [
-  { href: "/ai-inbox-employee", label: "AI inbox employee" },
+  { href: "/ai-inbox-employee", label: "Guide" },
   { href: "/compare", label: "Compare" },
   { href: "/facts", label: "Facts" },
   { href: "/pricing", label: "Pricing" },

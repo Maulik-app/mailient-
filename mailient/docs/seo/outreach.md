@@ -67,7 +67,7 @@ affiliate pages with no author.
 **Before sending:** take one real screenshot of Mailient's triage view
 (redact names). One image beats three paragraphs.
 
-**Subject:** A row for "{article title}": the inbox-employee option
+**Subject:** A row for "{article title}": the approval-first option
 
 Hi {first name},
 
@@ -75,9 +75,9 @@ Your {article title} compares {two tools they list}. One category it doesn't
 cover yet is tools that treat the inbox as a job, deciding what needs you,
 rather than a compose helper.
 
-Mailient is an always-on AI inbox employee for founders. It reads Gmail
-overnight, drafts in your voice, books meetings, and shows you only what needs
-a decision. Nothing sends without approval. $29/month or $8.99/week; screenshot
+Mailient is an AI inbox assistant for founders. It connects to Gmail, sorts
+what needs you, drafts a reply when you ask, and will not send anything until
+you approve it. $29/month or $8.99/week; screenshot
 attached.
 
 If it fits, a suggested one-liner: "Best for founders on Gmail who want to see

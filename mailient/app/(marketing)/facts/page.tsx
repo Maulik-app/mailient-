@@ -20,13 +20,12 @@ const PERIOD_LABEL = { week: "per week", month: "per month", once: "one-time pay
 const BLOCKS: { h2: string; answer: string; items: readonly string[] }[] = [
   {
     h2: "What is Mailient?",
-    answer:
-      "Mailient is an AI inbox employee for founders on Gmail. It sorts your inbox by what needs a decision, drafts replies, schedules meetings, and sends nothing without your approval.",
+    answer: SITE.definition,
     items: FACTS.is,
   },
   {
     h2: "What is Mailient not?",
-    answer: "Mailient is not an auto-sender, not a feature inside Gmail, and not a shared team inbox.",
+    answer: "Mailient is not an auto-sender, not an overnight agent, not a feature inside Gmail, and not a shared team inbox.",
     items: FACTS.isNot,
   },
   {

@@ -1,29 +1,43 @@
 # Mailient brand copy (frozen)
 
-Answer engines trust a claim when many independent sources repeat it. Use the
-sentence below **word for word** everywhere. Don't paraphrase it, and don't
-bring back "inbox OS", "chief of staff", "email co-pilot" or "agentic
-communication".
+Answer engines trust a claim when many independent sources repeat it, and they
+penalize a page that disagrees with the product. Use the sentence below **word
+for word** everywhere. Don't paraphrase it, and don't bring back "inbox OS",
+"chief of staff", "email co-pilot", "agentic communication", "always-on" or
+"inbox employee that runs overnight".
+
+The sentence states only what the product does today (checked against the code;
+see `FACTS` in `lib/seo/site.ts`). Widen it only when production code proves
+more, such as a background worker that is on, or voice learning from sent mail.
 
 Source of truth in code: `lib/seo/site.ts` (`SITE.definition`,
 `SITE.definitionShort`). If you change it there, change every profile below the
 same day.
 
-## The sentence (194 chars)
+## The sentence (169 chars)
 
-> Mailient is an always-on AI inbox employee for founders. It reads Gmail overnight, drafts in your voice, books meetings, and shows you only what needs a decision. Nothing sends without approval.
+> Mailient is an AI inbox assistant for founders. It connects to Gmail, sorts what needs you, drafts a reply when you ask, and will not send anything until you approve it.
 
-## Short version (156 chars, fits 160-char fields)
+## Short version (149 chars, fits 160-char fields)
 
-> Mailient is an always-on AI inbox employee for founders. It reads Gmail overnight, drafts in your voice, and books meetings. Nothing sends without approval.
+> Mailient is an AI inbox assistant for founders. It connects to Gmail, sorts what needs you, drafts when you ask, and sends nothing until you approve.
 
 ## Tagline versions
 
 | Length | Copy | Use |
 |---|---|---|
-| 118 | Always-on AI inbox employee for founders. Reads Gmail overnight, drafts in your voice. Nothing sends without approval. | LinkedIn company tagline (120 max) |
-| 44 | The always-on AI inbox employee for founders | Product Hunt tagline (60 max), directory "one-liner" fields |
-| 40 | Always-on AI inbox employee for founders | Very short fields, image alt text |
+| 114 | AI inbox assistant for founders. Sorts what needs you in Gmail, drafts when you ask, never sends without approval. | LinkedIn company tagline (120 max) |
+| 54 | AI inbox triage for founders. Never sends without you. | Product Hunt tagline (60 max), directory "one-liner" fields |
+| 28 | AI inbox triage for founders | Very short fields, image alt text |
+
+## What to own (and what not to)
+
+Defensible today: AI inbox triage for founders · ask-then-draft, never auto-send ·
+Gmail stays Gmail · Calendar / Meet only after you say yes.
+
+Not yet: "drafts while you sleep", "runs overnight", "learns your voice". Fyxer
+(and Superhuman Business) do background drafting today; the comparison pages say
+so, and that honesty is part of why they'll be trusted.
 
 ## Where it goes
 
@@ -38,7 +52,7 @@ Tick each one off when it carries the exact copy. Add its public URL to
 | X / Twitter | Bio | Short (156) | ☐ |
 | LinkedIn company page | Tagline | 118-char tagline | ☐ |
 | LinkedIn company page | About (first paragraph) | Full sentence | ☐ |
-| Founder's LinkedIn | Headline / About first line | "Building Mailient, the always-on AI inbox employee for founders" + full sentence in About | ☐ |
+| Founder's LinkedIn | Headline / About first line | "Building Mailient, AI inbox triage for founders" + full sentence in About | ☐ |
 | Crunchbase | Short description | Short (156) | ☐ |
 | Crunchbase | Full description | Full sentence first, then details | ☐ |
 | Product Hunt | Tagline | 44-char tagline | ☐ |
@@ -69,11 +83,8 @@ Every line below is backed by the code (see `FACTS` in `lib/seo/site.ts`):
 - Built by Maulik.
 
 **Not provable from this codebase, so don't state it yet:** overnight or background
-runs, learning your voice from the last 90 days of sent mail, automatic drafting, and
-Notion, Slack or Cal.com integrations (the app still shows these as "Coming Soon").
-Note that the frozen sentence itself says "reads Gmail overnight" and "drafts in
-your voice". Confirm the production product does both before stamping it on
-profiles, or edit `SITE.definition` once and every page follows.
+runs, learning your voice from sent mail, automatic drafting, and Notion, Slack or
+Cal.com integrations (the app still shows these as "Coming Soon").
 
 Don't state user counts, revenue, time-saved figures or ratings until you
 have real numbers you can show.

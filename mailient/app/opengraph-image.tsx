@@ -22,9 +22,9 @@ export default function OpenGraphImage() {
       >
         <div style={{ fontSize: 40, fontWeight: 700 }}>{SITE.name}</div>
         <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
-          <div style={{ fontSize: 76, fontWeight: 700, lineHeight: 1.05 }}>The AI inbox employee for founders</div>
+          <div style={{ fontSize: 76, fontWeight: 700, lineHeight: 1.05 }}>AI inbox triage for founders on Gmail</div>
           <div style={{ fontSize: 32, color: "#a3a3a3", lineHeight: 1.35 }}>
-            Sorts your Gmail by what needs a decision. Drafts, schedules, and never sends without approval.
+            Sorts what needs you. Drafts when you ask. Never sends without your approval.
           </div>
         </div>
       </div>

@@ -11,14 +11,17 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://mailient.x
 export const SITE = {
   name: "Mailient",
   url: SITE_URL,
-  category: "AI inbox employee",
-  /** Frozen canonical definition. Use verbatim. */
+  category: "AI inbox assistant",
+  /**
+   * Frozen canonical definition. Use verbatim. It states only what the product
+   * demonstrably does today; widen it only when the code proves more.
+   */
   definition:
-    "Mailient is an always-on AI inbox employee for founders. It reads Gmail overnight, drafts in your voice, books meetings, and shows you only what needs a decision. Nothing sends without approval.",
-  /** Same claim in 156 characters (fits the 160-char X bio): meta descriptions, directory short fields. */
+    "Mailient is an AI inbox assistant for founders. It connects to Gmail, sorts what needs you, drafts a reply when you ask, and will not send anything until you approve it.",
+  /** Same claim in 149 characters (fits the 160-char X bio): meta descriptions, directory short fields. */
   definitionShort:
-    "Mailient is an always-on AI inbox employee for founders. It reads Gmail overnight, drafts in your voice, and books meetings. Nothing sends without approval.",
-  homeTitle: "Mailient — AI Inbox Employee for Founders | Runs Gmail While You Build",
+    "Mailient is an AI inbox assistant for founders. It connects to Gmail, sorts what needs you, drafts when you ask, and sends nothing until you approve.",
+  homeTitle: "Mailient — AI Inbox Assistant for Founders on Gmail",
   logo: "/mailient-logo.png",
   founder: { name: "Maulik" },
   // TODO: add the X, LinkedIn, Product Hunt, Crunchbase and G2 profile URLs once
@@ -60,13 +63,14 @@ export const PRICE_SUMMARY =
  */
 export const FACTS = {
   is: [
-    "A separate AI inbox employee that connects to your existing Gmail account.",
-    "Sorts your inbox without being asked: opportunities, urgent requests, missed follow-ups and conversations at risk.",
-    "Drafts a reply from the email in front of you, for you to edit and send.",
+    "A separate AI inbox assistant that connects to your existing Gmail account.",
+    "Sorts your inbox automatically when you open it: opportunities, urgent requests, missed follow-ups and conversations at risk.",
+    "Drafts a reply when you ask, from the email in front of you, for you to edit and send.",
     "Schedules meetings through its assistant, Arcus: once you confirm, it creates the Google Calendar event with a Google Meet link.",
   ],
   isNot: [
     "Not an auto-sender. Every email goes out only when you send it, and meetings are created only after you confirm.",
+    "Not an overnight agent. It does not run in the background or draft replies on its own.",
     "Not a feature inside Gmail. It is a separate app that works on your Gmail account.",
     "Not a team help desk or shared-inbox tool.",
   ],

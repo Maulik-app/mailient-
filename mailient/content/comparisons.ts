@@ -21,7 +21,7 @@ const cell = (value: string, source: string, lastVerified = VERIFIED): Compariso
 export const MAILIENT_ROW: ComparisonRows = {
   worksOnGmail: cell("Yes — connects to your Gmail account with Google OAuth", "/facts#is-mailient-safe-to-connect-to-gmail"),
   unprompted: cell(
-    "Yes — sorts your inbox into opportunities, urgent requests, missed follow-ups and conversations at risk",
+    "Partly — sorts your inbox automatically when you open Mailient; drafts only when you ask",
     "/facts#what-is-mailient",
   ),
   approval: cell(
@@ -72,12 +72,12 @@ export const COMPARISONS: Comparison[] = [
     competitor: { name: "Fyxer", url: SRC.fyxerHome, pricingUrl: SRC.fyxerPricing },
     title: "Mailient vs Fyxer: AI Inbox Assistants Compared",
     description:
-      "Mailient vs Fyxer: both work on your inbox without a prompt and never send on their own. How drafting, meetings, pricing and fit differ.",
+      "Mailient vs Fyxer: Fyxer drafts in the background; Mailient sorts what needs you and drafts when asked. Neither sends on its own. Price and fit compared.",
     h1: "Mailient vs Fyxer",
     verdict:
       "Choose Fyxer if you want replies drafted automatically in your style, a team plan, Outlook, or a meeting notetaker. Choose Mailient if you are a founder on Gmail who wants to see only what needs a decision, with meetings scheduled after you confirm and weekly or lifetime pricing.",
     lede:
-      "Mailient and Fyxer both work on the inbox you already have, act on your mail without being prompted, and never send email on their own. Fyxer's core is drafting: it sorts mail and writes replies in your style across Gmail and Outlook. Mailient's core is deciding: it sorts your Gmail by what needs you, then helps you reply and schedule.",
+      "Mailient and Fyxer both work on the inbox you already have and never send email on their own. Fyxer's core is drafting: it sorts mail and writes replies in your style automatically, in the background, across Gmail and Outlook. Mailient's core is deciding: when you open it, it sorts your Gmail by what needs you, then drafts and schedules when you ask.",
     rows: {
       worksOnGmail: cell("Yes — Gmail and Outlook", SRC.fyxerHome),
       unprompted: cell("Yes — sorts incoming mail and drafts replies automatically", SRC.fyxerDrafts),
@@ -95,8 +95,8 @@ export const COMPARISONS: Comparison[] = [
         answer:
           "Fyxer is built around drafting: it writes replies in your style automatically, across Gmail and Outlook, for individuals and teams. Mailient is built around deciding: it sorts your Gmail into opportunities, urgent requests, missed follow-ups and conversations at risk, then helps you reply and schedule.",
         body: [
-          "The two agree on the fundamentals. Both work on the email account you already use, both act on new mail without a prompt, and both leave the send button to you.",
-          "If you want an inbox where most replies are already written when you open it, Fyxer does more of that today. If your bottleneck is knowing which threads matter, Mailient is aimed at that.",
+          "The two agree on the fundamentals: both work on the email account you already use, and both leave the send button to you. Fyxer drafts in the background; Mailient sorts when you open it and drafts when you ask.",
+          "If you want an inbox where most replies are already written when you open it, Fyxer does that and Mailient doesn't. If your bottleneck is knowing which threads matter, Mailient is aimed at that.",
         ],
       },
       {
@@ -158,12 +158,12 @@ export const COMPARISONS: Comparison[] = [
     competitor: { name: "Superhuman", url: "https://superhuman.com/", pricingUrl: "https://superhuman.com/plans" },
     title: "Mailient vs Superhuman: AI Email for Founders",
     description:
-      "Superhuman is an email client built for speed; Mailient is an AI inbox employee built to decide what needs you. Compare drafting, approval and price.",
+      "Superhuman is an email client built for speed; Mailient is an AI inbox assistant that shows what needs you. Compare drafting, approval and price.",
     h1: "Mailient vs Superhuman",
     verdict:
       "Choose Superhuman if you want to get through email faster yourself, or want drafts written automatically on its Business plan. Choose Mailient if you want your Gmail sorted by what needs a decision, with drafting and meeting scheduling in the same place.",
     lede:
-      "Superhuman and Mailient solve different halves of the email problem. Superhuman is a fast email client for Gmail and Outlook that makes you quicker at working your inbox. Mailient is an AI inbox employee that sorts your Gmail by what needs a decision and helps you act on it. Neither sends a reply you haven't approved.",
+      "Superhuman and Mailient solve different halves of the email problem. Superhuman is a fast email client for Gmail and Outlook that makes you quicker at working your inbox. Mailient is an AI inbox assistant that sorts your Gmail by what needs a decision and drafts when you ask. Neither sends a reply you haven't approved.",
     rows: {
       worksOnGmail: cell("Yes — Gmail and Outlook accounts, in Superhuman's own app", SRC.superhumanReview),
       unprompted: cell("On Business: Auto Drafts writes replies in the background", SRC.superhumanPlans),
@@ -176,7 +176,7 @@ export const COMPARISONS: Comparison[] = [
       {
         h2: "What is the main difference between Mailient and Superhuman?",
         answer:
-          "Superhuman is an email client built for speed, so you still work the inbox, just more quickly. Mailient is an inbox employee built to decide what needs you: it sorts your Gmail into opportunities, urgent requests, missed follow-ups and conversations at risk.",
+          "Superhuman is an email client built for speed, so you still work the inbox, just more quickly. Mailient is an inbox assistant built to show what needs you: it sorts your Gmail into opportunities, urgent requests, missed follow-ups and conversations at risk.",
         body: [
           "Superhuman's value is speed under your own hands: keyboard shortcuts, Split Inbox, reminders and read statuses. Mailient's value is the first pass: knowing which threads matter before you start.",
         ],
@@ -241,12 +241,12 @@ export const COMPARISONS: Comparison[] = [
     competitor: { name: "Gemini in Gmail", url: SRC.geminiGmail, pricingUrl: SRC.geminiWorkspacePricing },
     title: "Mailient vs Gemini in Gmail (2026 Comparison)",
     description:
-      "Gemini is a compose helper inside Gmail. Mailient is a separate inbox employee: it sorts what needs a decision, drafts, schedules, and never sends alone.",
+      "Gemini is a compose helper inside Gmail. Mailient is a separate inbox assistant: it sorts what needs you, drafts when asked, and never sends alone.",
     h1: "Mailient vs Gemini in Gmail",
     verdict:
-      "Gemini helps you write the email in front of you, inside Gmail. Mailient is a separate inbox employee that decides what needs you, drafts, and schedules, and never sends without your approval. Start with Gemini if help composing is enough; choose Mailient if the inbox itself is the job.",
+      "Gemini helps you write the email in front of you, inside Gmail. Mailient is a separate inbox assistant that sorts what needs you, drafts when you ask, schedules after you say yes, and never sends without your approval. Start with Gemini if help composing is enough; choose Mailient if the inbox itself is the job.",
     lede:
-      "Gemini in Gmail is a set of AI features inside Gmail: Help Me Write and Suggested Replies are free, and AI Inbox, on paid Google AI plans, surfaces to-dos and proposes drafts. Mailient is a separate AI inbox employee: it sorts your inbox into what needs a decision, drafts replies, schedules meetings on Google Calendar with Meet links, and sends nothing without your approval.",
+      "Gemini in Gmail is a set of AI features inside Gmail: Help Me Write and Suggested Replies are free, and AI Inbox, on paid Google AI plans, surfaces to-dos and proposes drafts. Mailient is a separate AI inbox assistant: it sorts your inbox into what needs a decision, drafts a reply when you ask, schedules meetings on Google Calendar with Meet links after you say yes, and sends nothing without your approval.",
     rows: {
       worksOnGmail: cell("Yes — built into Gmail", SRC.geminiGmail),
       unprompted: cell(
@@ -268,9 +268,9 @@ export const COMPARISONS: Comparison[] = [
       {
         h2: "What is the main difference between Mailient and Gemini in Gmail?",
         answer:
-          "Gemini is a feature inside Gmail; Mailient is a separate employee with its own job. Gemini's core tools help you compose the email in front of you, while Mailient works the inbox as a whole: it decides what needs you, prepares the reply, and schedules the meeting.",
+          "Gemini is a feature inside Gmail; Mailient is a separate product with its own job. Gemini's core tools help you compose the email in front of you, while Mailient works the inbox as a whole: it sorts what needs you, drafts the reply when you ask, and schedules the meeting after you say yes.",
         bullets: [
-          "A separate employee, not a feature: Mailient gives you one view of only the emails that need a decision: opportunities, urgent requests, missed follow-ups and conversations at risk.",
+          "A separate product, not a feature: Mailient gives you one view of only the emails that need a decision: opportunities, urgent requests, missed follow-ups and conversations at risk.",
           "An inbox job, not a compose helper: sorting, follow-up tracking, drafting and scheduling are one workflow rather than buttons in a compose window.",
           "Approval on every action: Mailient never sends an email on its own, and it creates a meeting only after you say yes.",
           "Calendar built in: Mailient's assistant, Arcus, proposes a time and, once you confirm, creates the Google Calendar event with a Google Meet link.",
@@ -286,7 +286,7 @@ export const COMPARISONS: Comparison[] = [
         answer:
           "Partly, and it's worth saying plainly. Google's AI Inbox surfaces important threads and generates draft replies, but as of September 2026 it is available to Google AI Ultra subscribers and rolling out to AI Plus and Pro subscribers in the US.",
         body: [
-          "If AI Inbox already covers what you need, you may not need Mailient. Mailient is for founders who want a dedicated employee for the inbox, with follow-up tracking and meeting scheduling in the same place, without a Google AI subscription.",
+          "If AI Inbox already covers what you need, you may not need Mailient. Note that AI Inbox proposes drafts on its own and Mailient drafts only when you ask. Mailient is for founders who want a dedicated inbox product, with follow-up tracking and meeting scheduling in the same place, without a Google AI subscription.",
         ],
       },
       {
@@ -297,7 +297,7 @@ export const COMPARISONS: Comparison[] = [
       {
         h2: "When is Mailient the better choice?",
         answer:
-          "Mailient is the better choice when your inbox is where your company runs and the cost is deciding, not typing. It brings back only the threads that need a decision, surfaces missed follow-ups, drafts replies and schedules meetings, and it doesn't require a Google AI subscription.",
+          "Mailient is the better choice when your inbox is where your company runs and the cost is deciding, not typing. It brings back only the threads that need a decision, surfaces missed follow-ups, drafts replies when you ask and schedules meetings after you say yes, and it doesn't require a Google AI subscription.",
       },
       {
         h2: "How does Mailient pricing compare with Gemini?",
@@ -335,12 +335,12 @@ export const COMPARISONS: Comparison[] = [
     competitor: { name: "Shortwave", url: SRC.shortwaveHome, pricingUrl: SRC.shortwavePricing },
     title: "Mailient vs Shortwave: AI Gmail Tools Compared",
     description:
-      "Shortwave is an AI-first Gmail client with Ghostwriter and AI filters. Mailient is an AI inbox employee that sorts your Gmail by what needs a decision.",
+      "Shortwave is an AI-first Gmail client with Ghostwriter and AI filters. Mailient is an AI inbox assistant that sorts your Gmail by what needs a decision.",
     h1: "Mailient vs Shortwave",
     verdict:
       "Choose Shortwave if you want an AI-first email client, drafts that learn from your sent mail, and your own automations. Choose Mailient if you want your Gmail sorted by what needs a decision, with scheduling built in and no rules to write.",
     lede:
-      "Shortwave and Mailient both work with Gmail. Shortwave is an AI-first email client: an assistant, Ghostwriter drafting that learns from your past sent emails, AI search and AI filters you write in plain English. Mailient is an AI inbox employee that sorts your Gmail by what needs a decision and helps you reply and schedule.",
+      "Shortwave and Mailient both work with Gmail. Shortwave is an AI-first email client: an assistant, Ghostwriter drafting that learns from your past sent emails, AI search and AI filters you write in plain English. Mailient is an AI inbox assistant that sorts your Gmail by what needs a decision and drafts and schedules when you ask.",
     rows: {
       worksOnGmail: cell("Yes — Gmail and Google Workspace, in Shortwave's own app", SRC.shortwaveHome),
       unprompted: cell(
@@ -356,7 +356,7 @@ export const COMPARISONS: Comparison[] = [
       {
         h2: "What is the main difference between Mailient and Shortwave?",
         answer:
-          "Shortwave is an email client: you move your daily email work into its app and use AI as you go, including rules you write yourself. Mailient is an inbox employee with a fixed job: it sorts your Gmail into what needs a decision and helps you reply and schedule.",
+          "Shortwave is an email client: you move your daily email work into its app and use AI as you go, including rules you write yourself. Mailient is an inbox assistant with a fixed job: it sorts your Gmail into what needs a decision and helps you reply and schedule when you ask.",
       },
       {
         h2: "When is Shortwave the better choice?",
@@ -366,7 +366,7 @@ export const COMPARISONS: Comparison[] = [
       {
         h2: "When is Mailient the better choice?",
         answer:
-          "Mailient is the better choice if you'd rather not build rules. It sorts your inbox into opportunities, urgent requests, missed follow-ups and conversations at risk on its own, schedules meetings on Google Calendar with Meet links after you confirm, and sends nothing until you approve.",
+          "Mailient is the better choice if you'd rather not build rules. When you open it, it sorts your inbox into opportunities, urgent requests, missed follow-ups and conversations at risk, schedules meetings on Google Calendar with Meet links after you confirm, and sends nothing until you approve.",
       },
       {
         h2: "How does Mailient pricing compare with Shortwave?",
