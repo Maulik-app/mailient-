@@ -6,7 +6,8 @@
 class RubeMCPClient {
   constructor() {
     this.baseUrl = 'https://rube.app/mcp';
-    this.token = 'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJ1c2VyXzAxS0E1Q1BEQkJHS0dBODZRWFYyWkNXWTkxIiwib3JnSWQiOiJvcmdfMDFLQTVDUEdBOTVXRlMwWDhXR0FZWUgyQUIiLCJpYXQiOjE3NjMyNjU4MDB9.JVQ8054t-A_XZKfWpIhGWFboX8KTjiW-9k0GL3CQwaQ';
+    // Token comes from the environment only; this repository is public.
+    this.token = process.env.RUBE_MCP_TOKEN;
     this.headers = {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${this.token}`

@@ -13,10 +13,18 @@ GOOGLE_CLIENT_SECRET=your_google_client_secret_here
 NEXTAUTH_URL=http://localhost:3000
 NEXTAUTH_SECRET=your_nextauth_secret_here
 
-# Supabase Configuration
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+# Supabase Configuration (server-side; there are no hardcoded fallbacks)
+SUPABASE_URL=your_supabase_project_url
+SUPABASE_ANON_KEY=your_supabase_anon_key
+# Bypasses row-level security. Server only: never prefix with NEXT_PUBLIC_.
 SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key
+
+# Rube MCP (lib/rube-mcp-client.js)
+RUBE_MCP_TOKEN=your_rube_mcp_token
+
+# Search engine verification (optional; see docs/seo/README.md)
+GOOGLE_SITE_VERIFICATION=
+BING_SITE_VERIFICATION=
 
 # For production, update NEXTAUTH_URL to your actual domain:
 # NEXTAUTH_URL=https://yourdomain.com

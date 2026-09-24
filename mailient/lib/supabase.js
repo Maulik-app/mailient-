@@ -1,21 +1,25 @@
 import { createClient } from '@supabase/supabase-js';
 import { encrypt, decrypt } from './crypto.js';
 
-const supabaseUrl = process.env.SUPABASE_URL || 'https://nelscyaohnrnekscprxq.supabase.co';
-const supabaseAnonKey = process.env.SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5lbHNjeWFvaG5ybmVrc2NwcnhxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM1MjAwMzQsImV4cCI6MjA2OTA5NjAzNH0.M0iKG556B4P1IFZkOf7tSWgXlYmy56UBznvTy6TWwgw';
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5lbHNjeWFvaG5ybmVrc2NwcnhxIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MzUyMDAzNCwiZXhwIjoyMDY5MDk2MDM0fQ.-PdyWp64BikrG-8leAPXEVNviJh21OPi7HOGdwejQ4U';
+// Credentials come from the environment only. Never add fallback values here:
+// this repository is public. The NEXT_PUBLIC_ names are accepted because
+// ENVIRONMENT_SETUP.md documented them. The service-role key bypasses row-level
+// security and must never have a NEXT_PUBLIC_ name or reach client code.
+const supabaseUrl = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseAnonKey = process.env.SUPABASE_ANON_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
 console.log('🔧 SUPABASE - Environment check:', {
   hasUrl: !!supabaseUrl,
   hasAnonKey: !!supabaseAnonKey,
-  url: supabaseUrl,
-  keyLength: supabaseAnonKey?.length || 0
+  hasServiceKey: !!supabaseServiceKey,
 });
 
-if (!supabaseUrl || !supabaseAnonKey) {
+if (!supabaseUrl || !supabaseAnonKey || !supabaseServiceKey) {
   console.error('🔧 SUPABASE - Missing environment variables:', {
     SUPABASE_URL: supabaseUrl ? 'present' : 'missing',
-    SUPABASE_ANON_KEY: supabaseAnonKey ? 'present' : 'missing'
+    SUPABASE_ANON_KEY: supabaseAnonKey ? 'present' : 'missing',
+    SUPABASE_SERVICE_ROLE_KEY: supabaseServiceKey ? 'present' : 'missing'
   });
   throw new Error('Missing Supabase environment variables');
 }
